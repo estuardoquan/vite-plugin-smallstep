@@ -3,6 +3,9 @@ const path = require('path');
 const micromatch = require('micromatch');
 
 async function getHttps(step = {}) {
+    const delay = (t) => {
+        return new Promise((resolve) => setTimeout(resolve, t));
+    }
     let https = null;
     while (!https) {
         try {
@@ -11,7 +14,7 @@ async function getHttps(step = {}) {
                 key: fs.readFileSync(step.key),
             };
         } catch (err) {
-            await new Promise((resolve) => setTimeout(resolve, 5000));
+            await delay(5000);
             console.log(err);
         }
     }

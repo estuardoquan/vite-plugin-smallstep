@@ -2,8 +2,6 @@
 
 Plugin runs an async function on the config method, awaiting the fs.readFileSync on CRT/KEY pair waiting to be read correctly.
 
-Based on [Smallstep Docker example](https://github.com/smallstep/certificates/tree/master/examples/docker)
-
 ## Usage
 
 ```

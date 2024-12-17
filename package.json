@@ -6,23 +6,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/proxymurder/vite-plugin-smallstep.git"
-    },
-    "keywords": [
-        "vite-plugin",
-        "smallstep",
-        "certificates"
-    ],
-    "author": "ProxyMurder",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/proxymurder/vite-plugin-smallstep/issues"
-    },
-    "homepage": "https://github.com/proxymurder/vite-plugin-smallstep#readme",
-    "peerDependencies": {
-        "vite": "^4.3.0 || ^5.0.0"
+   "peerDependencies": {
+        "vite": "^6.0.0"
     },
     "dependencies": {
         "micromatch": "^4.0.5"

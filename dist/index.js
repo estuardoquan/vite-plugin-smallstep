@@ -5,7 +5,8 @@ const micromatch = require('micromatch');
 async function getHttps(step = {}) {
     const delay = (t) => {
         return new Promise((resolve) => setTimeout(resolve, t));
-    }
+    };
+
     let https = null;
     while (!https) {
         try {
